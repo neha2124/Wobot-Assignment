@@ -1,0 +1,133 @@
+h3 ,p{
+    margin: 0;
+}
+table {
+    width: 80vw;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #7E7E7E;
+}
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 0.5px solid gainsboro;
+    font-family: auto;
+    
+}
+
+th {
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+
+tbody tr:hover {
+    background-color: #e9ecef;
+}
+.active {
+    padding: 2px 5px 2px 5px;
+    background-color: aliceblue;
+    color: green;
+}
+.inActive{
+    background-color: #e1dede;
+     color: #7E7E7E;
+}
+.inActiveCircle{
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    background-color: red;
+    border-radius: 50px;
+    margin:4px
+
+}
+.activeCircle{
+    background-color: green;
+}
+header, section{
+    width:80vw;
+    display: flex;
+    padding: 4px 12px 4px 12px;
+    gap:14px;
+    justify-content: space-between;
+}
+header {
+    margin-bottom: 15px;
+    align-items: center;
+}
+select, input {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    height: 30px;
+}
+input{
+    padding:5px;
+
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    font-family: Arial, sans-serif;
+}
+
+.pagination-btn {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-btn.disable {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination-btn:not(.disable):hover {
+    background-color: #0056b3;
+}
+
+.pagination-page {
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+    display: none;
+}
+
+.pagination-page.selected {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    visibility: visible;
+    display: inline-block;
+}
+
+.pagination-page:hover {
+    background-color: #e2e6ea;
+}
+.deleteBtn{
+    background: rgb(251, 100, 100);
+    border:none;
+    /* color: #ddd; */
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
